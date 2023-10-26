@@ -1,19 +1,9 @@
-mod sorts {
-    pub fn print2(){
-        for ch in 'A'..='z' {
-            println!("{ch}");
-        } 
-    }
-}
 
-fn print1() {
-    for ch in ('Z'..='a').rev() {
-        println!("{ch}");
-    } 
-}
+mod mod_one;
+mod mod_two;
 
 fn main() {
-    print1();
+    mod_one::sort_print();
     println!("-------------------------");
-    sorts::print2();
+    mod_two::sort::sort_print();
 } 
